@@ -1,10 +1,4 @@
 <?php
-/**
- * k3yDownloads.com
- *
- * @author Rob Lambell <rob@lambell.info>
- * @license MIT
- */
 
 function my_autoloader($class) {
     include 'classes/' . $class . '.class.php';
@@ -14,7 +8,7 @@ spl_autoload_register('my_autoloader');
 define('BASE_URL', 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname($_SERVER['SCRIPT_NAME']), '/') . '/');
 define('FILE_DIR', realpath('files').DIRECTORY_SEPARATOR);
 
-$excluded_files = array('Thumbs', '.htaccess', '.htpasswd');
+$excluded_files = array('Thumbs', '.gitignore', '.htaccess', '.htpasswd');
 
 if (!empty($_SERVER['QUERY_STRING'])) {
 
@@ -124,9 +118,10 @@ $files = new SortableIterator(new FilteredFilesystemIterator($listing_dir, $excl
         </div>
     </div>
 </div>
-<div id="footer">Got teh stuff?
+<div id="footer">Mod or Dev?
     <a href="http://k3yforums.com/ucp.php?i=pm&amp;mode=compose&amp;u=15943" target="_blank">PM Mystery Man</a> on
-    <a href="http://k3yforums.com" target="_blank">k3y Forums</a> for FTP axx.
+    <a href="http://k3yforums.com" target="_blank">k3y Forums</a> for FTP.
+    <a href="https://github.com/badgio/k3ydownloads.com" target="_blank">Source on GitHub</a>.
 </div>
 </body>
 </html>

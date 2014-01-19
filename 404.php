@@ -29,7 +29,7 @@ if(!defined('BASE_URL')){
         <div id="listing">
 
             <div><a href="<?=BASE_URL?>">
-                    <img src="<?=BASE_URL?>theme/icons/unknown.png" alt="404"/>
+                    <img src="<?=BASE_URL?>theme/icons/folder-home.png" alt="Folder"/>
                     <span class="parent_directory_link">Return to Home</span>
                         <span class="info">
                             <span class="size">&nbsp;</span>&nbsp;
@@ -40,9 +40,10 @@ if(!defined('BASE_URL')){
         </div>
     </div>
 </div>
-<div id="footer">Got teh stuff?
+<div id="footer">Mod or Dev?
     <a href="http://k3yforums.com/ucp.php?i=pm&amp;mode=compose&amp;u=15943" target="_blank">PM Mystery Man</a> on
-    <a href="http://k3yforums.com" target="_blank">k3y Forums</a> for FTP axx.
+    <a href="http://k3yforums.com" target="_blank">k3y Forums</a> for FTP.
+    <a href="https://github.com/badgio/k3ydownloads.com" target="_blank">Source on GitHub</a>.
 </div>
 </body>
 </html>
