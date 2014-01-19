@@ -120,10 +120,9 @@ $files = new SortableIterator(new FilteredFilesystemIterator($listing_dir, $excl
         </div>
     </div>
 </div>
-<div id="footer">Mod or Dev?
-    <a href="http://k3yforums.com/ucp.php?i=pm&amp;mode=compose&amp;u=15943" target="_blank">PM Mystery Man</a> on
-    <a href="http://k3yforums.com" target="_blank">k3y Forums</a> for FTP.
-    <a href="https://github.com/badgio/k3ydownloads.com" target="_blank">Source on GitHub</a>.
+<div id="footer">
+    <a href="http://k3yforums.com" target="_blank">k3y Forums</a> &middot;
+    <a href="https://github.com/badgio/k3ydownloads.com" target="_blank">GitHub</a>
 </div>
 </body>
 </html>
