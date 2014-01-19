@@ -91,14 +91,14 @@ $files = new SortableIterator(new FilteredFilesystemIterator($listing_dir, $excl
                     $icon = 'folder.png';
                     $filename = htmlentities(str_replace('-', ' ', $file->getFilename()));
                     $size = $file->getHumanSize($file->getDirSize());
-                    $modified = date("D M d, Y H:i a", $file->getFileMTime());
+                    $modified = date("D M d, Y g:i a", $file->getFileMTime());
                     $dir = substr($file->getPathname(), strlen(FILE_DIR));
                     $url = BASE_URL . htmlentities($dir);
                 } else {
                     $icon = $file->getExtension() . '.png';
                     $filename = htmlentities($file->getFilename());
                     $size = $file->getHumanSize();
-                    $modified = date("D M d, Y H:i a", $file->getMTime());
+                    $modified = date("D M d, Y g:i a", $file->getMTime());
                     $url = BASE_URL . htmlentities(implode('/', $breadcrumbs) . '/' . $file->getFilename());
                 }
                 ?>
