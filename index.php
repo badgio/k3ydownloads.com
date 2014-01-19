@@ -1,14 +1,14 @@
 <?php
 
 function my_autoloader($class) {
-    include 'classes/' . $class . '.class.php';
+    require_once 'classes/' . $class . '.class.php';
 }
 spl_autoload_register('my_autoloader');
 
 define('BASE_URL', 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname($_SERVER['SCRIPT_NAME']), '/') . '/');
 define('FILE_DIR', realpath('files').DIRECTORY_SEPARATOR);
 
-$excluded_files = array('Thumbs', '.gitignore', '.htaccess', '.htpasswd');
+$excluded_files = array('.gitignore', '.htaccess', '.htpasswd');
 
 if (!empty($_SERVER['QUERY_STRING'])) {
 
@@ -16,7 +16,7 @@ if (!empty($_SERVER['QUERY_STRING'])) {
         $listing_dir = realpath(FILE_DIR . $_SERVER['QUERY_STRING']);
     } else {
         header('HTTP/1.0 404 Not Found');
-        include('404.php');
+        require_once '404.php';
         exit;
     }
 
