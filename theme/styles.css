@@ -1,0 +1,149 @@
+body {
+    background-color: #000000;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    color: #FFF;
+}
+
+img {
+    border: 0;
+}
+
+#container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 1px solid #1b1b1a;
+    border-radius: 10px;
+    padding: 9px;
+    background-color: #171917;
+}
+
+a.main-logo {
+    padding: 0;
+    background: url(k3y-logo.png) no-repeat;
+    height: 72px;
+    width: 500px;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+#breadcrumbs {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: small;
+    margin: 0 0 8px 8px;
+}
+
+#breadcrumbs a, #breadcrumbs a:visited, #breadcrumbs a:link, #breadcrumbs a:active {
+    color: #92C83E;
+    text-decoration: none;
+}
+
+#breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+#listing-container {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #282A29), color-stop(1, #6b6d6c));
+    background-image: -o-linear-gradient(bottom, #282A29 0%, #6b6d6c 100%);
+    background-image: -moz-linear-gradient(bottom, #282A29 0%, #6b6d6c 100%);
+    background-image: -webkit-linear-gradient(bottom, #282A29 0%, #6b6d6c 100%);
+    background-image: -ms-linear-gradient(bottom, #282A29 0%, #6b6d6c 100%);
+    background-image: linear-gradient(to bottom, #282A29 0%, #6b6d6c 100%);
+    border-radius: 5px;
+    padding: 5px 6px 6px 6px;
+}
+
+#listing-header {
+    font-weight: bold;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 4px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+#header-filename {
+    text-align: left;
+    float: left;
+    width: 320px;
+}
+
+#header-size {
+    text-align: right;
+    width: 92px;
+    float: left;
+}
+
+#listing a {
+    display: block;
+    padding: 10px 10px;
+    font-size: small;
+    color: #92C83E;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 568px;
+    text-align: right;
+    background-color: #0e100f;
+    border-top: 1px solid #000;
+}
+
+#listing a:hover {
+    background-color: #090b0a;
+}
+
+#listing a:hover span.filename {
+    text-decoration: underline;
+}
+
+#listing a span.info {
+    color: #fff;
+    text-decoration: none !important;
+    font-size: 10px;
+}
+
+#listing a img {
+    float: left;
+    margin-right: 10px;
+}
+
+#listing a span.filename,
+#listing a span.parent_directory_link {
+    width: 300px;
+    float: left;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#listing a span.parent_directory_link {
+    color: #666666;
+}
+
+#listing a span.size {
+    float: left;
+    width: 75px;
+    text-align: right;
+}
+
+#footer {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 10px;
+    color: #666666;
+}
+
+#footer a {
+    text-decoration: underline;
+    color: #666666;
+}
+

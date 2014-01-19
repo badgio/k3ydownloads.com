@@ -1,0 +1,16 @@
+RewriteEngine on
+
+# www to non-www
+RewriteCond %{HTTP_HOST} ^www.k3ydownloads.com
+RewriteRule ^(.*)$ http://k3ydownloads.com/$1 [R=permanent,L]
+
+# deny direct access to files
+RewriteRule ^(files) - [F,L,NC]
+
+# default icon
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^theme/icons/(.*)$ theme/icons/unknown.png [L]
+
+# redirect requests to index.php as QUERY_STRING for compatibility
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?$1 [L]
