@@ -2,6 +2,8 @@ body {
     background-color: #000000;
     font-family: Verdana, Helvetica, Arial, sans-serif;
     color: #FFF;
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
 }
 
 img {
@@ -33,7 +35,7 @@ a.main-logo {
 
 #breadcrumbs {
     font-family: Verdana, Helvetica, Arial, sans-serif;
-    font-size: small;
+    font-size: 1.2em;
     margin: 0 0 8px 8px;
 }
 
@@ -65,25 +67,31 @@ a.main-logo {
     padding: 4px 0;
     color: #fff;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 1em;
 }
 
-#header-filename {
+#listing-header span.filename {
     text-align: left;
     float: left;
     width: 320px;
+    font-size: 1em;
 }
 
-#header-size {
+#listing-header span.size {
     text-align: right;
     width: 92px;
     float: left;
+    font-size: 1em;
+}
+
+#listing-header span.modified {
+    font-size: 1em;
 }
 
 #listing a {
     display: block;
     padding: 10px 10px;
-    font-size: small;
+    font-size: 1.3em;
     color: #92C83E;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -104,12 +112,13 @@ a.main-logo {
 #listing a span.info {
     color: #fff;
     text-decoration: none !important;
-    font-size: 10px;
 }
 
-#listing a img {
+#listing a img.icon {
     float: left;
     margin-right: 10px;
+    width: 16px;
+    height: 16px;
 }
 
 #listing a span.filename,
@@ -126,6 +135,10 @@ a.main-logo {
     color: #666666;
 }
 
+#listing a span.info span {
+    font-size: 0.8em;
+}
+
 #listing a span.size {
     float: left;
     width: 75px;
@@ -138,7 +151,7 @@ a.main-logo {
     margin-right: auto;
     margin-top: 8px;
     text-align: center;
-    font-size: 10px;
+    font-size: 1em;
     color: #666666;
 }
 
