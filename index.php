@@ -8,7 +8,7 @@ spl_autoload_register('my_autoloader');
 define('BASE_URL', 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname($_SERVER['SCRIPT_NAME']), '/') . '/');
 define('FILE_DIR', realpath('files').DIRECTORY_SEPARATOR);
 
-$excluded_files = array('.gitignore', '.htaccess', '.htpasswd');
+$excluded_files = array('.gitignore', '.htaccess', '.htpasswd', '.ftpquota');
 
 if (!empty($_SERVER['QUERY_STRING'])) {
 
