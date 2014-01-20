@@ -49,7 +49,8 @@ $files = new SortableIterator(new FilteredFilesystemIterator($listing_dir, $excl
     <div id="breadcrumbs">
         <a href="<?=BASE_URL?>">Home</a>
     <?php
-        $breadcrumbs = array_filter(explode(DIRECTORY_SEPARATOR, substr($listing_dir, strlen(FILE_DIR))));
+        $breadcrumbs = explode(DIRECTORY_SEPARATOR, substr($listing_dir, strlen(FILE_DIR)));
+        $breadcrumbs = array_filter($breadcrumbs);
 
         foreach ($breadcrumbs as $key => $breadcrumb) {
             $breadcrumb_dir = htmlentities(implode('/', array_slice($breadcrumbs, 0, $key+1)));
@@ -90,17 +91,16 @@ $files = new SortableIterator(new FilteredFilesystemIterator($listing_dir, $excl
                 if ($file->isDir()) {
                     $icon = 'folder.png';
                     $filename = htmlentities(str_replace('-', ' ', $file->getFilename()));
-                    $size = $file->getHumanSize($file->getDirSize());
-                    $modified = date("D M d, Y g:i a", $file->getFileMTime());
                     $dir = substr($file->getPathname(), strlen(FILE_DIR));
                     $url = BASE_URL . htmlentities($dir);
                 } else {
                     $icon = $file->getExtension() . '.png';
                     $filename = htmlentities($file->getFilename());
-                    $size = $file->getHumanSize();
-                    $modified = date("D M d, Y g:i a", $file->getMTime());
-                    $url = BASE_URL . htmlentities(implode('/', $breadcrumbs) . '/' . $file->getFilename());
+                    $path = implode('/', $breadcrumbs) . '/' . $file->getFilename();
+                    $url = BASE_URL . htmlentities($path);
                 }
+                $size = $file->getHumanSize();
+                $modified = date("D M d, Y g:i a", $file->getFileMTime());
                 ?>
 
                 <div>
