@@ -49,12 +49,14 @@ a.main-logo {
 }
 
 #listing-container {
+    background-color: #282A29;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #282A29), color-stop(1, #6b6d6c));
     background-image: -o-linear-gradient(bottom, #282A29 0%, #6b6d6c 100%);
     background-image: -moz-linear-gradient(bottom, #282A29 0%, #6b6d6c 100%);
     background-image: -webkit-linear-gradient(bottom, #282A29 0%, #6b6d6c 100%);
     background-image: -ms-linear-gradient(bottom, #282A29 0%, #6b6d6c 100%);
     background-image: linear-gradient(to bottom, #282A29 0%, #6b6d6c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282A29', endColorstr='#6b6d6c',GradientType=0 );
     border-radius: 5px;
     padding: 5px 6px 6px 6px;
 }
