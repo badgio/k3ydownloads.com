@@ -40,6 +40,7 @@ $files = new SortableIterator(new FilteredFilesystemIterator($listing_dir, $excl
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=620" />
     <title>k3y Downloads</title>
+    <meta name="description" content="Downloads for xk3y and 3k3y. Firmware Updates, Micro SD Images, User Manuals, Apps &amp; Other Files." />
     <link rel="shortcut icon" href="<?=BASE_URL?>favicon.ico" />
     <link rel="stylesheet" type="text/css" href="<?=BASE_URL?>theme/styles.css"/>
 </head>
